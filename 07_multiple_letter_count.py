@@ -13,3 +13,5 @@ def multiple_letter_count(phrase):
         counter[letter] = counter[letter] + 1 if letter in counter else 1
 
     return counter
+
+#use or operator

@@ -59,3 +59,6 @@ def list_manipulation(lst, command, location, value=None):
             toReturn = lst.pop()
 
     return toReturn
+
+#just return val intead of toReturn variable
+#could use set or tupple to check for valid commands

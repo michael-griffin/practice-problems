@@ -19,3 +19,5 @@ def number_compare(a, b):
         msg = 'Second is greater'
 
     return msg
+
+#could return in if/elif

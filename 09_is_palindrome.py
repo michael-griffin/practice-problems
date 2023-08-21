@@ -28,3 +28,5 @@ def is_palindrome(phrase):
     else:
         return False
 
+#return phrase_fixed
+

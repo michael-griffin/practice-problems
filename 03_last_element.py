@@ -16,3 +16,5 @@ def last_element(lst):
         return lst[len(lst)-1]
     else:
         return None
+
+    #don't return none, don't need to check if list has length of 0
