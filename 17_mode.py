@@ -11,3 +11,10 @@ def mode(nums):
         >>> mode([2, 2, 3, 3, 2])
         2
     """
+    #could just redo as frequency counter.
+    highest = (nums[0], 0)
+    for num in nums:
+        if nums.count(num) > highest[1]:
+            highest = (num, nums.count(num))
+
+    return highest[0]

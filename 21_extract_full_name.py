@@ -14,3 +14,16 @@ def extract_full_names(people):
         >>> extract_full_names(names)
         ['Ada Lovelace', 'Grace Hopper']
     """
+    #first_names = [val for person in people for (key,val) in person.items() if key == 'first']
+    first_names = [person['first'] for person in people]
+    last_names = [person['last'] for person in people]
+
+    full_names = []
+    #for loop to combine
+    for ind in range(len(first_names)):
+        full_names.append(f"{first_names[ind]} {last_names[ind]}")
+
+    return full_names
+
+
+people = [ {'first': 'Ada', 'last': 'Lovelace'},  {'first': 'Grace', 'last': 'Hopper'}]
