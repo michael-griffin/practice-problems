@@ -22,3 +22,17 @@ def sum_pairs(nums, goal):
         ()
     """
     #create set of nums so far, then compare current num to set.
+    nums_sofar = set()
+
+    for num in nums:
+        #before adding, we should check if nums_sofar has a match
+        match_num = goal - num
+        if match_num in nums_sofar:
+            #return tuple
+            return (match_num, num)
+
+        #otherwise, add num to set and continue
+        nums_sofar.add(num)
+
+    #return empty tuple
+    return ()

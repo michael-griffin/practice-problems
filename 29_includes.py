@@ -30,3 +30,15 @@ def includes(collection, sought, start=None):
         >>> includes({"apple": "red", "berry": "blue"}, "blue")
         True
     """
+    # check if sought in collection
+    if type(collection) == dict:
+        #get list of values
+        #check if sought in list
+        return sought in collection.values()
+        #check if sought in set (already in values)
+    elif type(collection) == set:
+        return sought in collection
+    else:
+        #check start
+        short_col = collection[start:]
+        return sought in short_col
