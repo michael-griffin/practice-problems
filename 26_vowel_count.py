@@ -22,3 +22,5 @@ def vowel_count(phrase):
             #     counter[char] = 1
 
     return counter
+
+#on line 18, could pass second arg to give us something if we don't find char

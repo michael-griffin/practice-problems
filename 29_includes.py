@@ -42,3 +42,5 @@ def includes(collection, sought, start=None):
         #check start
         short_col = collection[start:]
         return sought in short_col
+
+    #could use isinstance instead of type

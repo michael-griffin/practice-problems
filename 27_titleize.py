@@ -21,3 +21,5 @@ def titleize(phrase):
     #     formatted += word.capitalize() + ' '
 
     ##join back at end
+
+    #title() method
